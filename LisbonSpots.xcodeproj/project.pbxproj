@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		191BB8AC1EC721D700902C5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191BB8AB1EC721D700902C5D /* Images.xcassets */; };
+		192282A51ECCFE4700E54F23 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192282A41ECCFE4700E54F23 /* DetailTableViewController.m */; };
+		197CBF5A1EBA4E1E00D673BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 197CBF591EBA4E1E00D673BB /* main.m */; };
+		197CBF5D1EBA4E1E00D673BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 197CBF5C1EBA4E1E00D673BB /* AppDelegate.m */; };
+		197CBF601EBA4E1E00D673BB /* LisbonSpots.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 197CBF5E1EBA4E1E00D673BB /* LisbonSpots.xcdatamodeld */; };
+		197CBF631EBA4E1E00D673BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197CBF621EBA4E1E00D673BB /* ViewController.m */; };
+		197CBF661EBA4E1E00D673BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197CBF641EBA4E1E00D673BB /* Main.storyboard */; };
+		197CBF6B1EBA4E1E00D673BB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 197CBF691EBA4E1E00D673BB /* LaunchScreen.xib */; };
+		197CBF861EBA4EC100D673BB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197CBF851EBA4EC100D673BB /* MapKit.framework */; };
+		197CBF891EBA6F0200D673BB /* LisbonSpotsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 197CBF881EBA6F0200D673BB /* LisbonSpotsService.m */; };
+		19AC2A881ECB71FF0045A49A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AC2A871ECB71FF0045A49A /* TableViewController.m */; };
+		19AC2A8E1ECB76D80045A49A /* DetailMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AC2A8D1ECB76D80045A49A /* DetailMapViewController.m */; };
+		19FBC3001EC4F057002B4526 /* Spot.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FBC2FF1EC4F057002B4526 /* Spot.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		191BB8AB1EC721D700902C5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		192282A31ECCFE4700E54F23 /* DetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewController.h; sourceTree = "<group>"; };
+		192282A41ECCFE4700E54F23 /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
+		197CBF541EBA4E1E00D673BB /* LisbonSpots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LisbonSpots.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		197CBF581EBA4E1E00D673BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		197CBF591EBA4E1E00D673BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		197CBF5B1EBA4E1E00D673BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		197CBF5C1EBA4E1E00D673BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		197CBF5F1EBA4E1E00D673BB /* LisbonSpots.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LisbonSpots.xcdatamodel; sourceTree = "<group>"; };
+		197CBF611EBA4E1E00D673BB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = LisbonSpots/ViewController.h; sourceTree = "<group>"; };
+		197CBF621EBA4E1E00D673BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = LisbonSpots/ViewController.m; sourceTree = "<group>"; };
+		197CBF651EBA4E1E00D673BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		197CBF6A1EBA4E1E00D673BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		197CBF851EBA4EC100D673BB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		197CBF871EBA6F0200D673BB /* LisbonSpotsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LisbonSpotsService.h; sourceTree = "<group>"; };
+		197CBF881EBA6F0200D673BB /* LisbonSpotsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LisbonSpotsService.m; sourceTree = "<group>"; };
+		19AC2A861ECB71FF0045A49A /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		19AC2A871ECB71FF0045A49A /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		19AC2A8C1ECB76D80045A49A /* DetailMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailMapViewController.h; sourceTree = "<group>"; };
+		19AC2A8D1ECB76D80045A49A /* DetailMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailMapViewController.m; sourceTree = "<group>"; };
+		19FBC2FE1EC4F057002B4526 /* Spot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spot.h; sourceTree = "<group>"; };
+		19FBC2FF1EC4F057002B4526 /* Spot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spot.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		197CBF511EBA4E1E00D673BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				197CBF861EBA4EC100D673BB /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		197CBF4B1EBA4E1E00D673BB = {
+			isa = PBXGroup;
+			children = (
+				197CBF561EBA4E1E00D673BB /* LisbonSpots */,
+				197CBF551EBA4E1E00D673BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		197CBF551EBA4E1E00D673BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				197CBF541EBA4E1E00D673BB /* LisbonSpots.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		197CBF561EBA4E1E00D673BB /* LisbonSpots */ = {
+			isa = PBXGroup;
+			children = (
+				197CBF841EBA4E5C00D673BB /* Views */,
+				197CBF831EBA4E5600D673BB /* Controllers */,
+				197CBF821EBA4E4B00D673BB /* Models */,
+				197CBF811EBA4E4500D673BB /* Services */,
+				197CBF801EBA4E3000D673BB /* Frameworks */,
+				197CBF5B1EBA4E1E00D673BB /* AppDelegate.h */,
+				197CBF5C1EBA4E1E00D673BB /* AppDelegate.m */,
+				197CBF571EBA4E1E00D673BB /* Supporting Files */,
+			);
+			path = LisbonSpots;
+			sourceTree = "<group>";
+		};
+		197CBF571EBA4E1E00D673BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				197CBF581EBA4E1E00D673BB /* Info.plist */,
+				197CBF591EBA4E1E00D673BB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		197CBF801EBA4E3000D673BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				197CBF851EBA4EC100D673BB /* MapKit.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		197CBF811EBA4E4500D673BB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				197CBF871EBA6F0200D673BB /* LisbonSpotsService.h */,
+				197CBF881EBA6F0200D673BB /* LisbonSpotsService.m */,
+			);
+			name = Services;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		197CBF821EBA4E4B00D673BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				197CBF5E1EBA4E1E00D673BB /* LisbonSpots.xcdatamodeld */,
+				19FBC2FE1EC4F057002B4526 /* Spot.h */,
+				19FBC2FF1EC4F057002B4526 /* Spot.m */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		197CBF831EBA4E5600D673BB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				197CBF611EBA4E1E00D673BB /* ViewController.h */,
+				197CBF621EBA4E1E00D673BB /* ViewController.m */,
+				19AC2A861ECB71FF0045A49A /* TableViewController.h */,
+				19AC2A871ECB71FF0045A49A /* TableViewController.m */,
+				19AC2A8C1ECB76D80045A49A /* DetailMapViewController.h */,
+				19AC2A8D1ECB76D80045A49A /* DetailMapViewController.m */,
+				192282A31ECCFE4700E54F23 /* DetailTableViewController.h */,
+				192282A41ECCFE4700E54F23 /* DetailTableViewController.m */,
+			);
+			name = Controllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		197CBF841EBA4E5C00D673BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				197CBF641EBA4E1E00D673BB /* Main.storyboard */,
+				197CBF691EBA4E1E00D673BB /* LaunchScreen.xib */,
+				191BB8AB1EC721D700902C5D /* Images.xcassets */,
+			);
+			name = Views;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		197CBF531EBA4E1E00D673BB /* LisbonSpots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 197CBF7A1EBA4E1E00D673BB /* Build configuration list for PBXNativeTarget "LisbonSpots" */;
+			buildPhases = (
+				197CBF501EBA4E1E00D673BB /* Sources */,
+				197CBF511EBA4E1E00D673BB /* Frameworks */,
+				197CBF521EBA4E1E00D673BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LisbonSpots;
+			productName = LisbonSpots;
+			productReference = 197CBF541EBA4E1E00D673BB /* LisbonSpots.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		197CBF4C1EBA4E1E00D673BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Flag;
+				TargetAttributes = {
+					197CBF531EBA4E1E00D673BB = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 197CBF4F1EBA4E1E00D673BB /* Build configuration list for PBXProject "LisbonSpots" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 197CBF4B1EBA4E1E00D673BB;
+			productRefGroup = 197CBF551EBA4E1E00D673BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				197CBF531EBA4E1E00D673BB /* LisbonSpots */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		197CBF521EBA4E1E00D673BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191BB8AC1EC721D700902C5D /* Images.xcassets in Resources */,
+				197CBF661EBA4E1E00D673BB /* Main.storyboard in Resources */,
+				197CBF6B1EBA4E1E00D673BB /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		197CBF501EBA4E1E00D673BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				197CBF5D1EBA4E1E00D673BB /* AppDelegate.m in Sources */,
+				197CBF601EBA4E1E00D673BB /* LisbonSpots.xcdatamodeld in Sources */,
+				197CBF631EBA4E1E00D673BB /* ViewController.m in Sources */,
+				192282A51ECCFE4700E54F23 /* DetailTableViewController.m in Sources */,
+				197CBF5A1EBA4E1E00D673BB /* main.m in Sources */,
+				19AC2A8E1ECB76D80045A49A /* DetailMapViewController.m in Sources */,
+				197CBF891EBA6F0200D673BB /* LisbonSpotsService.m in Sources */,
+				19AC2A881ECB71FF0045A49A /* TableViewController.m in Sources */,
+				19FBC3001EC4F057002B4526 /* Spot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		197CBF641EBA4E1E00D673BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				197CBF651EBA4E1E00D673BB /* Base */,
+			);
+			name = Main.storyboard;
+			path = LisbonSpots;
+			sourceTree = "<group>";
+		};
+		197CBF691EBA4E1E00D673BB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				197CBF6A1EBA4E1E00D673BB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = LisbonSpots;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		197CBF781EBA4E1E00D673BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		197CBF791EBA4E1E00D673BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		197CBF7B1EBA4E1E00D673BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = LisbonSpots/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		197CBF7C1EBA4E1E00D673BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = LisbonSpots/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		197CBF4F1EBA4E1E00D673BB /* Build configuration list for PBXProject "LisbonSpots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				197CBF781EBA4E1E00D673BB /* Debug */,
+				197CBF791EBA4E1E00D673BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		197CBF7A1EBA4E1E00D673BB /* Build configuration list for PBXNativeTarget "LisbonSpots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				197CBF7B1EBA4E1E00D673BB /* Debug */,
+				197CBF7C1EBA4E1E00D673BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		197CBF5E1EBA4E1E00D673BB /* LisbonSpots.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				197CBF5F1EBA4E1E00D673BB /* LisbonSpots.xcdatamodel */,
+			);
+			currentVersion = 197CBF5F1EBA4E1E00D673BB /* LisbonSpots.xcdatamodel */;
+			name = LisbonSpots.xcdatamodeld;
+			path = LisbonSpots/LisbonSpots.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 197CBF4C1EBA4E1E00D673BB /* Project object */;
+}
