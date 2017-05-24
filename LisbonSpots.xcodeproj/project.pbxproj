@@ -19,6 +19,7 @@
 		197CBF891EBA6F0200D673BB /* LisbonSpotsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 197CBF881EBA6F0200D673BB /* LisbonSpotsService.m */; };
 		19AC2A881ECB71FF0045A49A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AC2A871ECB71FF0045A49A /* TableViewController.m */; };
 		19AC2A8E1ECB76D80045A49A /* DetailMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AC2A8D1ECB76D80045A49A /* DetailMapViewController.m */; };
+		19D8D0E01ED4BADB00964718 /* AddLisbonSpotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D8D0DF1ED4BADB00964718 /* AddLisbonSpotViewController.m */; };
 		19FBC3001EC4F057002B4526 /* Spot.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FBC2FF1EC4F057002B4526 /* Spot.m */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,8 @@
 		19AC2A871ECB71FF0045A49A /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		19AC2A8C1ECB76D80045A49A /* DetailMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailMapViewController.h; sourceTree = "<group>"; };
 		19AC2A8D1ECB76D80045A49A /* DetailMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailMapViewController.m; sourceTree = "<group>"; };
+		19D8D0DE1ED4BADB00964718 /* AddLisbonSpotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddLisbonSpotViewController.h; sourceTree = "<group>"; };
+		19D8D0DF1ED4BADB00964718 /* AddLisbonSpotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddLisbonSpotViewController.m; sourceTree = "<group>"; };
 		19FBC2FE1EC4F057002B4526 /* Spot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spot.h; sourceTree = "<group>"; };
 		19FBC2FF1EC4F057002B4526 /* Spot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +143,8 @@
 				19AC2A8D1ECB76D80045A49A /* DetailMapViewController.m */,
 				192282A31ECCFE4700E54F23 /* DetailTableViewController.h */,
 				192282A41ECCFE4700E54F23 /* DetailTableViewController.m */,
+				19D8D0DE1ED4BADB00964718 /* AddLisbonSpotViewController.h */,
+				19D8D0DF1ED4BADB00964718 /* AddLisbonSpotViewController.m */,
 			);
 			name = Controllers;
 			path = ..;
@@ -229,6 +234,7 @@
 				197CBF5D1EBA4E1E00D673BB /* AppDelegate.m in Sources */,
 				197CBF601EBA4E1E00D673BB /* LisbonSpots.xcdatamodeld in Sources */,
 				197CBF631EBA4E1E00D673BB /* ViewController.m in Sources */,
+				19D8D0E01ED4BADB00964718 /* AddLisbonSpotViewController.m in Sources */,
 				192282A51ECCFE4700E54F23 /* DetailTableViewController.m in Sources */,
 				197CBF5A1EBA4E1E00D673BB /* main.m in Sources */,
 				19AC2A8E1ECB76D80045A49A /* DetailMapViewController.m in Sources */,

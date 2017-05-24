@@ -11,6 +11,5 @@
 
 @interface DetailTableViewController : UIViewController
 @property Spot *spot;
-@property NSIndexPath *path;
 
 @end

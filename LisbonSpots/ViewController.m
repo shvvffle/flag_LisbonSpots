@@ -68,8 +68,6 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)map viewForAnnotation:(id <MKAnnotation>)annotation {
     
-    //UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"map-pin-.png"]];
-    
         if([annotation isKindOfClass: [MKUserLocation class]]) {
             return nil;
         }

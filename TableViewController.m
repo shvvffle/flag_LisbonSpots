@@ -17,7 +17,6 @@
 @property (strong,nonatomic) NSArray *barSpots;
 @property (strong,nonatomic) NSArray *clubSpots;
 @property (strong,nonatomic) NSArray *lisbonSpots;
-@property NSIndexPath *rowToSelect;
 
 @end
 
@@ -43,18 +42,10 @@
     self.restaurantSpots = restaurantSpotsContainer;
     self.clubSpots = clubSpotsContainer;
     self.barSpots = barSpotsContainer;
-
-    [self configureTableview];
+    
+    [self.tableView reloadData];
 }
 
-- (void) configureTableview {
-    
-    self.table = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    self.table.delegate = self;
-    self.table.dataSource = self;
-    [self.view addSubview:self.table];
-    
-}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 3;
@@ -121,9 +112,19 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    _rowToSelect = [self.tableView indexPathForSelectedRow];
+    NSIndexPath *selectedIndexPath = [tableView indexPathForSelectedRow];
     
-    NSLog(@"%@", _rowToSelect);
+    if (selectedIndexPath.section == 0) {
+        _selectedSpot = [self.restaurantSpots objectAtIndex:selectedIndexPath.row];
+    }
+    
+    if (selectedIndexPath.section == 1) {
+        _selectedSpot = [self.barSpots objectAtIndex:selectedIndexPath.row];
+    }
+    
+    if (selectedIndexPath.section == 2) {
+       _selectedSpot = [self.clubSpots objectAtIndex:selectedIndexPath.row];
+    }
 
     [self performSegueWithIdentifier:@"segueSpotDetail" sender:indexPath];
     
@@ -136,8 +137,7 @@
     
     if ([[segue identifier] isEqualToString:@"segueSpotDetail"]) {
         DetailTableViewController *detailView = [segue destinationViewController];
-        detailView.path = _rowToSelect;
-        detailView.spot = [_lisbonSpots objectAtIndex:_rowToSelect.row];
+        detailView.spot = _selectedSpot;
     }
 }
 
