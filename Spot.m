@@ -78,7 +78,7 @@
         return nil;
     }
 
-    NSLog(@"[Spot allLisbonSpots] -> %@", result);
+    //NSLog(@"[Spot allLisbonSpots] -> %@", result);
  
     return result;
     

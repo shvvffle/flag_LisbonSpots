@@ -6,16 +6,16 @@
 //  Copyright (c) 2017 Flag. All rights reserved.
 //
 
+#import <MapKit/MapKit.h>
 #import "DetailTableViewController.h"
 #import "TableViewController.h"
 
-@interface DetailTableViewController ()
+@interface DetailTableViewController () <MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *spotName;
 @property (weak, nonatomic) IBOutlet UILabel *spotType;
 @property (weak, nonatomic) IBOutlet UITextView *spotPhone;
-@property (weak, nonatomic) IBOutlet UILabel *spotLat;
-@property (weak, nonatomic) IBOutlet UILabel *spotLong;
 @property (weak, nonatomic) IBOutlet UITextView *spotDescription;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 
@@ -28,8 +28,38 @@
     _spotType.text = _spot.spotType;
     _spotDescription.text = _spot.spotDesc;
     _spotPhone.text = _spot.spotPhone;
-    _spotLat.text = [NSString stringWithFormat:@"%f", _spot.spotLat];
-    _spotLong.text = [NSString stringWithFormat:@"%f", _spot.spotLong];
+    
+    _mapView.delegate = self;
+    
+    [_mapView addAnnotation:_spot];
+}
+
+#pragma mark - MKAnnotation methods
+
+// change custom pins
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+    
+    if([annotation isKindOfClass: [MKUserLocation class]]) {
+        return nil;
+    }
+    
+    MKAnnotationView *view = [[MKAnnotationView alloc]
+                              initWithAnnotation:annotation reuseIdentifier:@"pin"];
+    
+    if (view == nil) {
+        view = [[MKPinAnnotationView alloc] initWithAnnotation: annotation reuseIdentifier: @"lisbonSpots"];
+    } else {
+        view.annotation = annotation;
+    }
+    
+    view.image =[UIImage imageNamed:@"map-pin-.png"];
+    
+    [view setEnabled:YES];
+    [view setCanShowCallout:YES];
+    
+    return view;
+    
 }
 
 @end
