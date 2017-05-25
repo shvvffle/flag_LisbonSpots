@@ -31,7 +31,6 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="imageRest" destination="u5L-Rj-Sja" id="y2F-7b-r1v"/>
                                     <outlet property="labelRest" destination="Xt7-j3-oP0" id="fNt-Z0-AAO"/>
                                 </connections>
                             </tableViewCell>
@@ -52,7 +51,6 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="imageBar" destination="P4X-AZ-TEA" id="QmT-5h-cw0"/>
                                     <outlet property="labelBar" destination="at3-Tr-onf" id="0Ov-kQ-Cgg"/>
                                 </connections>
                             </tableViewCell>
@@ -73,7 +71,6 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="imageClub" destination="uYQ-4b-0oJ" id="Tx8-Hj-4kM"/>
                                     <outlet property="labelClub" destination="ckG-MT-Xbl" id="p75-9u-ANh"/>
                                 </connections>
                             </tableViewCell>

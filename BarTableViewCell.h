@@ -10,6 +10,5 @@
 
 @interface BarTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *labelBar;
-@property (weak, nonatomic) IBOutlet UIImageView *imageBar;
 
 @end

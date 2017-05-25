@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ClubTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *imageClub;
 @property (weak, nonatomic) IBOutlet UILabel *labelClub;
 
 @end

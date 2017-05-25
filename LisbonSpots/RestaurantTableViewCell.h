@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface RestaurantTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *imageRest;
 @property (weak, nonatomic) IBOutlet UILabel *labelRest;
 
 @end
