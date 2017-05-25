@@ -9,6 +9,9 @@
 #import "TableViewController.h"
 #import "Spot.h"
 #import "DetailTableViewController.h"
+#import "RestaurantTableViewCell.h"
+#import "ClubTableViewCell.h"
+#import "BarTableViewCell.h"
 
 @interface TableViewController () <UITableViewDelegate, UITableViewDataSource>
 @property Spot *selectedSpot;
@@ -69,24 +72,31 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifierRest = @"CellRestaurant";
+    static NSString *CellIdentifierBar = @"CellBar";
+    static NSString *CellIdentifierClub = @"CellClub";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    
+    UITableViewCell *cell;
+
         if (indexPath.section == 0) {
-            cell.textLabel.text = [[self.restaurantSpots objectAtIndex:indexPath.row] spotName];
+            RestaurantTableViewCell *restCell = [tableView dequeueReusableCellWithIdentifier:CellIdentifierRest];
+            restCell.labelRest.text = [[self.restaurantSpots objectAtIndex:indexPath.row] spotName];
+            
+            return restCell;
         }
     
         if (indexPath.section == 1) {
-            cell.textLabel.text = [[self.barSpots objectAtIndex:indexPath.row] spotName];
+            BarTableViewCell *barCell = [tableView dequeueReusableCellWithIdentifier:CellIdentifierBar];
+            barCell.labelBar.text = [[self.barSpots objectAtIndex:indexPath.row] spotName];
+            
+            return barCell;
         }
     
         if (indexPath.section == 2) {
-            cell.textLabel.text = [[self.clubSpots objectAtIndex:indexPath.row] spotName];
+            ClubTableViewCell *clubCell = [tableView dequeueReusableCellWithIdentifier:CellIdentifierClub];
+            clubCell.labelClub.text = [[self.clubSpots objectAtIndex:indexPath.row] spotName];
+            
+            return clubCell;
         }
     
     return cell;

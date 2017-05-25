@@ -20,6 +20,9 @@
 		19AC2A881ECB71FF0045A49A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AC2A871ECB71FF0045A49A /* TableViewController.m */; };
 		19AC2A8E1ECB76D80045A49A /* DetailMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AC2A8D1ECB76D80045A49A /* DetailMapViewController.m */; };
 		19D8D0E01ED4BADB00964718 /* AddLisbonSpotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D8D0DF1ED4BADB00964718 /* AddLisbonSpotViewController.m */; };
+		19DB47851ED75966007A42BC /* RestaurantTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DB47841ED75966007A42BC /* RestaurantTableViewCell.m */; };
+		19DB47881ED75B4D007A42BC /* BarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DB47871ED75B4D007A42BC /* BarTableViewCell.m */; };
+		19DB478B1ED75B58007A42BC /* ClubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DB478A1ED75B58007A42BC /* ClubTableViewCell.m */; };
 		19FBC3001EC4F057002B4526 /* Spot.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FBC2FF1EC4F057002B4526 /* Spot.m */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,12 @@
 		19AC2A8D1ECB76D80045A49A /* DetailMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailMapViewController.m; sourceTree = "<group>"; };
 		19D8D0DE1ED4BADB00964718 /* AddLisbonSpotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddLisbonSpotViewController.h; sourceTree = "<group>"; };
 		19D8D0DF1ED4BADB00964718 /* AddLisbonSpotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddLisbonSpotViewController.m; sourceTree = "<group>"; };
+		19DB47831ED75966007A42BC /* RestaurantTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RestaurantTableViewCell.h; path = LisbonSpots/RestaurantTableViewCell.h; sourceTree = "<group>"; };
+		19DB47841ED75966007A42BC /* RestaurantTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestaurantTableViewCell.m; path = LisbonSpots/RestaurantTableViewCell.m; sourceTree = "<group>"; };
+		19DB47861ED75B4D007A42BC /* BarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarTableViewCell.h; sourceTree = "<group>"; };
+		19DB47871ED75B4D007A42BC /* BarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarTableViewCell.m; sourceTree = "<group>"; };
+		19DB47891ED75B58007A42BC /* ClubTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubTableViewCell.h; sourceTree = "<group>"; };
+		19DB478A1ED75B58007A42BC /* ClubTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubTableViewCell.m; sourceTree = "<group>"; };
 		19FBC2FE1EC4F057002B4526 /* Spot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spot.h; sourceTree = "<group>"; };
 		19FBC2FF1EC4F057002B4526 /* Spot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +144,8 @@
 		197CBF831EBA4E5600D673BB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				19DB47831ED75966007A42BC /* RestaurantTableViewCell.h */,
+				19DB47841ED75966007A42BC /* RestaurantTableViewCell.m */,
 				197CBF611EBA4E1E00D673BB /* ViewController.h */,
 				197CBF621EBA4E1E00D673BB /* ViewController.m */,
 				19AC2A861ECB71FF0045A49A /* TableViewController.h */,
@@ -145,6 +156,10 @@
 				192282A41ECCFE4700E54F23 /* DetailTableViewController.m */,
 				19D8D0DE1ED4BADB00964718 /* AddLisbonSpotViewController.h */,
 				19D8D0DF1ED4BADB00964718 /* AddLisbonSpotViewController.m */,
+				19DB47861ED75B4D007A42BC /* BarTableViewCell.h */,
+				19DB47871ED75B4D007A42BC /* BarTableViewCell.m */,
+				19DB47891ED75B58007A42BC /* ClubTableViewCell.h */,
+				19DB478A1ED75B58007A42BC /* ClubTableViewCell.m */,
 			);
 			name = Controllers;
 			path = ..;
@@ -231,6 +246,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19DB47851ED75966007A42BC /* RestaurantTableViewCell.m in Sources */,
+				19DB478B1ED75B58007A42BC /* ClubTableViewCell.m in Sources */,
 				197CBF5D1EBA4E1E00D673BB /* AppDelegate.m in Sources */,
 				197CBF601EBA4E1E00D673BB /* LisbonSpots.xcdatamodeld in Sources */,
 				197CBF631EBA4E1E00D673BB /* ViewController.m in Sources */,
@@ -239,6 +256,7 @@
 				197CBF5A1EBA4E1E00D673BB /* main.m in Sources */,
 				19AC2A8E1ECB76D80045A49A /* DetailMapViewController.m in Sources */,
 				197CBF891EBA6F0200D673BB /* LisbonSpotsService.m in Sources */,
+				19DB47881ED75B4D007A42BC /* BarTableViewCell.m in Sources */,
 				19AC2A881ECB71FF0045A49A /* TableViewController.m in Sources */,
 				19FBC3001EC4F057002B4526 /* Spot.m in Sources */,
 			);
