@@ -32,6 +32,11 @@
     _mapView.delegate = self;
     
     [_mapView addAnnotation:_spot];
+    
+    MKCoordinateRegion spotLoc = MKCoordinateRegionMake(_spot.coordinate, MKCoordinateSpanMake(0.01, 0.01));
+    
+    [_mapView setRegion: spotLoc animated:YES];
+    
 }
 
 #pragma mark - MKAnnotation methods
